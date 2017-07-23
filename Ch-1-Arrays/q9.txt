@@ -1,0 +1,14 @@
+Q - 9: Assume you have a method i5Substring which checks if one word is a substring
+of another. Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one
+call to isSubstring (e.g., "waterbottle" is a rotation of "erbottlewat").
+
+Solution - There is no code for this. It's more like a brain teaser and an analytical question. The solution for this is quite simple.
+
+We check that the lengths of the two strings is equal. If that is the case:
+
+We create a string S1S1 which S1 + S1 and check whether S2 is a substring of S1S1. If it is, then S2 is a rotation of S1.
+
+Explaination: If S2 is a rotation of S1, then there must be a rotation point in S1. Let that point be after x characters and S1 has y characters remaning after the last x character. So, S1 = x + y or xy.
+Now, as per our assumption, S2 = yx (rotation point is x).
+
+We can see that yx (S2) is always a substring of xyxy (S1S1).
